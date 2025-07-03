@@ -2,7 +2,7 @@
 powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 
 # Descarga e instala Node.js:
-choco install nodejs-lts --version="${props.release.major}"
+choco install nodejs-lts
 
 # Verifica la versión de Node.js:
 node -v # Debería mostrar "${props.release.versionWithPrefix}".
